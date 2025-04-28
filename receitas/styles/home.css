@@ -1,0 +1,21 @@
+.mural1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background-color: #AFD9AD;
+}
+
+.card1 {
+    width: 230px;
+
+    background-color: #0B1C26;
+}
+
+img {
+    width: 150px;
+}
+
+/* #184059 #0B1C26 #63CAF2 #79F2E6 #AFD9AD*/

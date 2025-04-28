@@ -1,12 +1,4 @@
 <?php
-    // $sql = "SELECT *,
-    // upper(titulo) AS titulo,
-    // upper(descricao) AS descricao,
-    // upper(receitaTexto) AS receitaTexto,
-    // upper(autor) AS autor,
-    // upper(tipoDeReceita) AS tipoDeReceita,
-    // upper(imagem) AS imagem
-    // FROM receitas";
 
     $sql = "SELECT id, titulo, autor, tipoDeReceita, imagem
     FROM (
@@ -21,12 +13,15 @@
 
     while($dados = mysqli_fetch_assoc($query)){
         ?>
-        <tr>
-            <td><?=$dados['titulo'] ?></td>
-            <td><?=$dados['autor'] ?></td>
-            <td><?=$dados['tipoDeReceita'] ?></td>
-            <td><?=$dados['imagem'] ?></td>
-        </tr>
+        <div class="mural1">
+            <div class="card1">
+                <h2><?=$dados['titulo'] ?></h2>
+                <p><?=$dados['autor'] ?></p>
+                <p><?=$dados['tipoDeReceita'] ?></p>
+                <img src="<?=$dados['imagem'] ?>" alt="">
+            </div>
+            
+        </div>
         <?php
     }
 ?>
